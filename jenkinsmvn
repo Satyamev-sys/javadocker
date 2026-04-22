@@ -10,7 +10,8 @@ pipeline {
        stage('Create Package') {
             steps {
                 sh 'mvn clean package'
-            }
+             }
+         } 
        stage('Release') {
             steps {
                 archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
