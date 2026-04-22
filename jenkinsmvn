@@ -15,7 +15,7 @@ pipeline {
        stage('Release') {
             steps {
                 archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
-                input 'you want procced'
+                echo "Hello"
             } 
     }
 }
